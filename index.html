@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flooower - Авторская флористика и доставка цветов</title>
+    <meta name="description" content="Авторские букеты с доставкой за 60 минут. Мастерская flooower: искусство дарить нежность и создавать уют.">
+    <link rel="canonical" href="https://lab.rø.cc/flooower">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lab.rø.cc/flooower">
+    <meta property="og:title" content="flooower - Авторская флористика">
+    <meta property="og:description" content="Закажите эксклюзивный букет с доставкой. Тщательно отобранные цветы для ваших близких.">
+    <meta property="og:image" content="favicon/og.jpg"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="flooower - Доставка цветов">
+    <meta name="twitter:description" content="Авторские композиции, которые рассказывают истории.">
+    <meta name="twitter:image" content="favicon/og.jpg">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">FLOOOWER</div>
+        <ul class="nav-links">
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#about">О мастерской</a></li>
+            <li><a href="#delivery">Доставка</a></li>
+        </ul>
+        <div class="cart-icon" id="cartIcon">🛒 Корзина (0)</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Искусство дарить нежность</h1>
+            <p>Авторские букеты с доставкой по городу за 60 минут</p>
+            <a href="#catalog" class="btn">Смотреть коллекцию</a>
+        </div>
+    </header>
+
+    <section id="catalog" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Наши хиты</h2>
+            <div class="grid-catalog">
+                
+                <div class="product-card" data-name="Букет 'Розовая мечта'" data-price="4500">
+                    <div class="img-wrapper">
+                        <img src="img/im2.webp" alt="Букет Розовая мечта">
+                    </div>
+                    <h3>Букет "Розовая мечта"</h3>
+                    <p class="price">4 500 ₸</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+
+                <div class="product-card" data-name="Весенние тюльпаны" data-price="2800">
+                    <div class="img-wrapper">
+                        <img src="img/im3.webp" alt="Весенние тюльпаны">
+                    </div>
+                    <h3>Весенние тюльпаны</h3>
+                    <p class="price">2 800 ₸</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+
+                <div class="product-card" data-name="Нежные пионы" data-price="5200">
+                    <div class="img-wrapper">
+                        <img src="img/im4.webp" alt="Нежные пионы">
+                    </div>
+                    <h3>Нежные пионы</h3>
+                    <p class="price">5 200 ₸</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+
+                <div class="product-card" data-name="Орхидея в кашпо" data-price="3100">
+                    <div class="img-wrapper">
+                        <img src="img/im1.webp" alt="Орхидея в кашпо">
+                    </div>
+                    <h3>Орхидея в кашпо</h3>
+                    <p class="price">3 100 ₸</p>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light fade-in">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Создано с любовью</h2>
+                <p>Мы верим, что цветы - это лучший способ передать чувства без слов. Наши флористы тщательно отбирают каждый бутон, чтобы создать неповторимые композиции. Каждый букет - это маленькая история о нежности и красоте.</p>
+                <img src="img/im10.webp" alt="Процесс создания" class="process-img">
+            </div>
+            <div class="about-images">
+                <img src="img/im9.webp" alt="Интерьер мастерской">
+                <img src="img/im5.webp" alt="Цветочный декор">
+            </div>
+        </div>
+    </section>
+
+    <section class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Детали и уют</h2>
+            <div class="gallery-grid">
+                <img src="img/im8.webp" alt="Свадебный букет">
+                <img src="img/im7.webp" alt="Подарочный набор">
+                <img src="img/im6.webp" alt="Инструменты флориста">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 flooower. </p> <a href="https://github.com/aro000on/flooower">GitHub</a> <a href="https://rø.cc">Dev Site</a>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <span class="close-cart" id="closeCart">&times;</span>
+        <h3>🛍️ Корзина</h3>
+        <div class="cart-items" id="cartItems">
+            <p style="text-align: center; color: #999;">Корзина пуста</p>
+        </div>
+        <div class="cart-total" id="cartTotal">Итого: 0 ₸</div>
+        <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
